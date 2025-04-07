@@ -20,6 +20,7 @@ public class RegistroAplicacion extends Registro{
         this.latitud = latitud;
         this.longitud = longitud;
         this.usuario = usuario;
+        usuario.getRegistro(this);
     }
         
     
