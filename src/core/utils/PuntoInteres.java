@@ -32,12 +32,18 @@ public class PuntoInteres {
 
     @Override
     public String toString() {
-        return "- Nombre=" + nombre + ", tipo=" + tipo + ", latitud=" + latitud + ", longitud=" + longitud;
+        return "- Nombre=" + nombre + "\t - tipo=" + tipo + "\t - latitud=" + latitud + "\t - longitud=" + longitud;
     }
 
     public ArrayList<ArrayList<Usuario>> getUsuarios() {
         return usuarios;
     }
+
+    public LocalDateTime getFechas(int i) {
+        return fechas.get(i);
+    }
+    
+    
     
     
    

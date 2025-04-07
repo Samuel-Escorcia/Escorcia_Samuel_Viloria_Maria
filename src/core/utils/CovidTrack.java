@@ -66,6 +66,7 @@ public class CovidTrack {
             System.out.println("Punto Interes: " + i);
             System.out.println(punto);
             System.out.println("Usuarios cercanos: ");
+            int j = 0;
             for (ArrayList<Usuario> user : punto.getUsuarios()) {
                 ArrayList<Usuario> infectados = new ArrayList<>();
                 ArrayList<Usuario> sanos = new ArrayList<>();
@@ -77,9 +78,13 @@ public class CovidTrack {
                     }
 
                 }
-                
-                System.out.println("");
-                
+                int h = sanos.size() + infectados.size();
+                System.out.println("- Cantidad de usuarios cercanos: ");
+                System.out.println(punto.getFechas(j).getMonth() + ": " + h);
+                System.out.println("- Cantidad de usuarios infectados: ");
+                System.out.println(punto.getFechas(j).getMonth() + ": " + infectados.size());
+
+                j++;
 
             }
         }
