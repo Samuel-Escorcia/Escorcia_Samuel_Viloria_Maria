@@ -27,4 +27,9 @@ public class UsuarioAplicacion extends Usuario{
     public void getRegistro(Registro tem){
         historial.add(tem);
     }
+
+    public ArrayList<Registro> getHistorial() {
+        return historial;
+    }
+    
 }

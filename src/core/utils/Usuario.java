@@ -16,7 +16,6 @@ public abstract class Usuario {
         this.celular = celular;
         this.covid = covid;
     }
-    protected void getRegistro(Registro reg){
     
-    }
+    
 }

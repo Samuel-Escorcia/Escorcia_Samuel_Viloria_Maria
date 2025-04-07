@@ -59,6 +59,30 @@ public class CovidTrack {
     }
 
     public void showResumenPuntosIntesesPorMes() {
+
+        int i = 00;
+        for (PuntoInteres punto : puntosInteres) {
+            i++;
+            System.out.println("Punto Interes: " + i);
+            System.out.println(punto);
+            System.out.println("Usuarios cercanos: ");
+            for (ArrayList<Usuario> user : punto.getUsuarios()) {
+                ArrayList<Usuario> infectados = new ArrayList<>();
+                ArrayList<Usuario> sanos = new ArrayList<>();
+                for (Usuario usuario : user) {
+                    if (usuario.covid) {
+                        infectados.add(usuario);
+                    } else {
+                        sanos.add(usuario);
+                    }
+
+                }
+                
+                System.out.println("");
+                
+
+            }
+        }
     }
 
     public PuntoInteres getPuntoInteres(int place) {

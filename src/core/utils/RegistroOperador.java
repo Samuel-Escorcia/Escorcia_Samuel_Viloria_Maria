@@ -10,18 +10,15 @@ import java.time.LocalDateTime;
  *
  * @author sescorciaj
  */
-public class RegistroAplicacion extends Registro{
-    private float latitud;
-    private float longitud;
-        private Usuario usuario;
+public class RegistroOperador extends Registro{
+    private Usuario usuario;
+    private Antena antena;
 
-    public RegistroAplicacion(int latitud, int longitud, Usuario usuario, LocalDateTime fecha) {
+    public RegistroOperador(Usuario usuario, Antena antena, LocalDateTime fecha) {
         super(fecha);
-        this.latitud = latitud;
-        this.longitud = longitud;
         this.usuario = usuario;
-        usuario.getRegistro(this);
-    }
+        this.antena = antena;
         
+    }
     
 }

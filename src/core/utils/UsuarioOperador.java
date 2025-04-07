@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author sescorciaj
  */
 public class UsuarioOperador extends Usuario{
-        private ArrayList<Registro> historial = new ArrayList<>();
+    private ArrayList<Registro> historial = new ArrayList<>();
 
     public UsuarioOperador(String celular, boolean covid) {
         super(celular, covid);
@@ -20,5 +20,11 @@ public class UsuarioOperador extends Usuario{
     public void getRegistro(Registro tem){
         historial.add(tem);
     }
+
+    public ArrayList<Registro> getHistorial() {
+        return historial;
+    }
+    
+    
 
 }

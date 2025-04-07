@@ -26,7 +26,19 @@ public class PuntoInteres {
     }
 
     public void updateUsuariosCercanos(ArrayList<Usuario> usuarios, LocalDateTime of) {
+        this.usuarios.add(usuarios);
+        this.fechas.add(of);
     }
+
+    @Override
+    public String toString() {
+        return "- Nombre=" + nombre + ", tipo=" + tipo + ", latitud=" + latitud + ", longitud=" + longitud;
+    }
+
+    public ArrayList<ArrayList<Usuario>> getUsuarios() {
+        return usuarios;
+    }
+    
     
    
 }
